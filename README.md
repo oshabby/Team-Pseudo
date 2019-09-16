@@ -1,4 +1,4 @@
-# Team-Delete-And-Die
+## Team-Pseudo
 
 This is a team repo, clone the repo to your computer by forking the repo to your github account with the button on the right above then cloning in git bash.
 
