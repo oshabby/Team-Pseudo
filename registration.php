@@ -50,7 +50,7 @@ if(count($_POST)>0) {
     <input type="password" name="password" placeholder="password" required>
 	<input type="password" name="confirmpassword" placeholder="confirm password" required>
     <input type="submit" name="submit" value="Sign Up">
-    <p>Have an account? <a href="login.html">Login</a></p>
+    <p>Have an account? <a href="index.php">Login</a></p>
 
   </form>
 
