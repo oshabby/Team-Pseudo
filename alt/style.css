@@ -1,0 +1,57 @@
+.landingPage{
+    background-image: linear-gradient(rgb(10, 10, 10, 0.6), rgb(10, 10, 10, 0.6), rgb(10, 10, 10, 0.6)), url(images/robot-2301646_1280.jpg);
+    height: 610px;
+    background-size: cover;
+}
+.nav-link{
+    color: white !important;
+    padding: 10px !important;
+}
+.head{
+    font: bolder !important;
+    font-size: 40px !important;
+    font-family: 'Pacifico', cursive;
+}
+.toph1{
+    margin-top: 200px !important;
+}
+
+/* this is the styling for the modal */
+modalImage{
+    background-size: cover;
+    height: 10px !important;
+}
+/* this is the styling for the form */
+.bottom{
+    border-style: none !important;
+    border-bottom: 2px solid black !important;
+}
+.fat{
+    font-size: 80px;
+    text-align: center;
+    color: rgb(0, 255, 34);
+}
+.hit{
+    padding-left: 180px;
+}
+
+
+
+/* this styling is for the landingpage */
+
+.topImg{
+    background-image: linear-gradient(rgb(10, 10, 10, 0.6), rgb(10, 10, 10, 0.6), rgb(10, 10, 10, 0.6)), url(images/beverage-3157395_1920.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 610px;
+}
+.tittle{
+    font-size: 120px !important;
+    font-family: 'Permanent Marker', cursive;
+}
+footer{
+    background-color: rgb(102, 101, 101);
+}
+.car{
+    padding-bottom: 40px !important;
+}
