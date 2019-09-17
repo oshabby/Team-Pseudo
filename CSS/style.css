@@ -30,9 +30,27 @@ input{
 }
 input[type= "submit"]{
     background: #215B6F;
+    margin-bottom: 3px;
+}
+input[type= "submit"]:hover{
+    color: whitesmoke;
 }
 h1{
     color: white;
+}
+
+p{
+    color: antiquewhite;
+    padding-top: 0px;
+    border-top: 0px;
+    margin-top: 0px; 
+    text-align: right;
+    font-size: 12px;
+}
+
+a{
+    text-decoration: none;
+    color: steelblue;
 }
 
 @media only screen and (max-width: 600px){
