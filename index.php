@@ -4,29 +4,20 @@ if(count($_POST)>0) {
 	$info = json_decode(file_get_contents("info.json"));
 	
 	$email = $_POST["email"];
-	$name = $_POST["name"];
+	//$name = $_POST["name"];
 	$password = $_POST["password"];
-	$confirmpassword = $_POST["confirmpassword"];
+	//$confirmpassword = $_POST["confirmpassword"];
 	
 	if(in_array($email ,array_column($info, 'email'))){
-		$warning = "This email has been registered";
-	}else if (empty($email) || empty($name)  || empty($password)  || empty($confirmpassword)){
-		$warning = "No field should be empty";
-	}else{
-		if($_POST["password"] === $_POST["confirmpassword"]){
-			array_push($info, [
-				"email" => $email,
-				"password" => $password,
-				"name" => $name
-			]);
-
-			file_put_contents('info.json', json_encode($info));
+		//$warning = "This email has been registered";
+		if(in_array($password, array_column($info, "password"))){
 			session_start();
-			$_SESSION['user_login'] = $name;
-			header("Location: success.php");
-		}else{
-			$warning = "Password mismatch";
+			$_SESSION["user_login"] = $name;
+			header("Location: success.php")
+
 		}
+	}else{
+		$warning = "Email or password incorrect";
 	}
 	
 }
@@ -43,7 +34,7 @@ if(count($_POST)>0) {
 		<div class="content">
 			<h2>Log In</h2>
 			<form name="frmUser" method="post" action="" method="POST" class="container">
-				
+				<div class="message"><?php if($warning!="") { echo $warning; } ?></div>
 				<input type="text" name="username" placeholder="username" required="">
 				<input type="password" name="password" placeholder="password" required="">
 				<input type="button" name="button" value="Login">	
